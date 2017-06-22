@@ -3,14 +3,11 @@
 <head>
 <meta charset="UTF-8">
     <title>Contact page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Latest compiled and minified Jquery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
 <!--navigation bar -->
@@ -43,21 +40,20 @@
         <div class="col-wrap">
             <h1>Contact</h1>
     <hr>
-        <div class="form-group">
         <form id="contact-form">
-        <ul>
-            <li><label for="name">Name</label>
-                <input type="text" id="name" placeholder="John Smith" required="required"></li>
-
-            <li><label for="email">Email</label>
-                <input type="email" id="email" placeholder="example@gmail.com" required="required"></li>
-
-            <li><label for="message">Message</label>
-                <textarea id="message" name="message" required="required"></textarea></li>
-        </ul>
+        <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John Smith"></div>
+        <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com"></div>
+         <div class="form-group">
+        <label for="exampleTextarea">Message</label>
+        <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
+        </div>
             <input type="submit">
         </form>
-    </div>    <!--form group-->
+
     </div>    <!--col-wrap-->
     </div>    <!--col-sm-8-->
 
@@ -78,6 +74,11 @@
     <h6>Copyright &copy; 2017 Ditas Fleck</h6>
     </div>
     </nav>
+
+    <!-- Latest compiled and minified Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
