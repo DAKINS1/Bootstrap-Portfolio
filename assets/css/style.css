@@ -5,15 +5,9 @@ body {
     background-image: url("../images/concrete_texture.png");
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
 .container { /*about me and contact me*/
     width: 100%;
     margin: 0 auto;
-    clear: both;
 }
 
 h1,
@@ -42,19 +36,19 @@ h4 {
     background: #4aaaa5;
     padding-top: 16px;
     margin-top: -6px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-bottom: 0;
 
 }
 
-#footer {
-    font-size: 12px;
-    color: #fff;
-    text-align: center;
-    background: #666;
-    border-top: 8px solid #4aaaad;
-    width: 100%;
-    padding: 2%;
+p {
+    line-height: 200%;
+    color: #777;
+    font-size: 16px;
+}
+
+li {
+        color: #777;
 }
 
 /*sidebar*/
@@ -65,11 +59,12 @@ h4 {
     background: #fff;
     border: 1px solid #ddd;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 39px;
     color: #4aaaa5;
         font-family: Georgia, Times, "Times New Roman", serif;
 }
 
+/*sidebar social icons*/
 .social {
     width: 62px;
     height: 62px;
@@ -82,14 +77,12 @@ h4 { /*connect with me*/
      padding-bottom: 20px;
 }
 
-
-/*main*/
-
+/*main left section */
 .col-wrap {
     float: left;
     width: 100%;
     max-width: 650px;
-    padding: 30px;
+    padding: 20px;
     margin: 0 0 40px;
     background: #fff;
     border: 1px solid #ddd;
@@ -98,7 +91,6 @@ h4 { /*connect with me*/
     font-family: Georgia, Times, "Times New Roman", serif;
     margin-bottom: 5px;
 }
-
 
 /*portfolio page */
 .work {
@@ -143,15 +135,16 @@ h4 { /*connect with me*/
     margin-bottom: 20px;
 }
 
-#contact-form il {
+#contact-form li {
     margin-bottom: 10px;
+            color: #777;
 }
 
 label,
 input[type=text],
 input[type=email],
 textarea {
-    display: bock;
+    display: block;
     width: 100%;
 }
 
@@ -177,14 +170,14 @@ input[type=submit] {
     border: 0 none;
 }
 
-p {
-    line-height: 200%;
-    color: #777;
-    font-size: 16px;
-}
-
-li {
-        color: #777;
+#footer {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    background: #666;
+    border-top: 6px solid #4aaaad;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
 /*hover styling*/
@@ -194,11 +187,11 @@ input[type=submit]:hover {
 }
 
 nav a:hover {
-  color: #5e7f7e;
+    color: #5e7f7e;
 }
 .social:hover {
-  cursor: pointer;
-  opacity: 0.8;
+    cursor: pointer;
+    opacity: 0.8;
 }
 /*end of hover styling */
 
@@ -216,14 +209,11 @@ nav a:hover {
 .work {
     margin-left: 5%;
     width: 90%;
-    }
+}
 
 .work img {
     height: 260px;
-    }
-
-
-
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -237,6 +227,7 @@ nav a:hover {
     display: inline-block;
     width: 100%;
     margin-left: 0;
+    position: static;
     }
 
 .auth-image {
@@ -247,14 +238,20 @@ nav a:hover {
 .work {
     margin: 20px 10px 0px;
     width: 274px;
-    }
+}
 
 .work img {
         height: 180px;
-    }
-
 }
 
+.navbar-header {
+        position: static;
+        float: none !important;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+}
 
 @media screen and (max-width: 640px) {
 
@@ -263,9 +260,8 @@ nav a:hover {
 }
 
 .col-wrap2 {
-
     width: 100%;
-    }
+}
 
 .auth-image {
     width: 100%;
@@ -275,15 +271,20 @@ nav a:hover {
 .work {
     margin-left: 5%;
     width: 90%;
-    }
+}
 
 .work img {
     height: 260px;
-    }
+}
 
  header {
     position: static;
-    }
 }
+
+ul li {
+    text-align: center;
+}
+}
+
 
 
